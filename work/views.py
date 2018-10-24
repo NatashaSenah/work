@@ -1,5 +1,5 @@
+from django.shortcuts import render,redirect
 from django.http  import HttpResponse
-def jirani(request):
-    neighbours = Neighbourhood.objects.all()
-    business = Business.objects.all()
-    return render(request,'jirani.html',locals())
+def work(request):
+    
+    return render(request, 'kazi.html',locals())
