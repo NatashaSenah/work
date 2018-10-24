@@ -7,11 +7,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ccff66;
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 li a {
@@ -30,10 +30,10 @@ li a:hover {
 <body>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+ <img src="../../static/images/un.png" style="width:250px;height:100px;padding:left;">
+  <li><a href="{% url 'seller' %}">Sellers</a></li>
+  <li><a href="{% url 'buyer' %}">Buyer</a></li>
+  
 </ul>
 
 </body>
