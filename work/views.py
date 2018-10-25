@@ -5,6 +5,7 @@ from .models import Buyer,Seller
 from .forms import SellerForm,BuyerForm
 from django.contrib.auth.models import User
 def work(request):
+    all=Seller.objects.all()
     return render(request, 'kazi.html',locals())
 @login_required(login_url='/accounts/login/')
 def buyer(request):
