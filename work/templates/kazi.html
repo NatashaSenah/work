@@ -99,96 +99,18 @@ $(document).ready(function() {
 </div>
 <div class="container"> 
 <div class="row"> 
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/cabs.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Cabbage</h4>
-        <p>ksh.60</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
+  {% for seller in all %}
+     <div class="col-md-4">
+      <div class="thumbnail">
+  <img src="{{seller.seller_image.url}}" alt="" style="width:380px;height:300px">
+  {{seller.product}}
+  <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
   </div>
 </div>
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/potato.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Potao</h4>
-        <p>Ksh.40</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
+    
+    {% endfor %}
 </div>
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/kales.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Kales</h4>
-        <p>Ksh.30</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row"> 
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/carrot.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Carrot</h4>
-        <p>Ksh.40</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/tomato.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Tomato</h4>
-        <p>Ksh 10</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/githeri.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Githeri</h4>
-        <p>Ksh.40</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row"> 
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/beef.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Meat</h4>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-    <div class="thumbnail">
-    <img src="../../static/images/chapo.jpg" alt="" style="width:380px;height:300px">
-    <div class="caption">
-        <h4>Chapatti</h4>
-        <p>Ksh.30</p>
-        <p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> </p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-
-</body>
-</html>
-
 {% endblock %}
+
 
         
